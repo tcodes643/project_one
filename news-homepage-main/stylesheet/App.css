@@ -1,0 +1,226 @@
+@charset "UTF-8";
+@font-face {
+    font-family: t;
+    src: url(../assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+body{
+    width: 100%;
+    /* overflow-x:hidden; */
+}
+*, *::after, *::before{
+    margin: 0;padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: t;
+}
+.container{
+    margin-top: 15px !important; 
+    width: 90%;
+    margin: 0 auto;
+}
+header .h-flex .i{
+    width: 100%;
+}
+header .h-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .h-flex div:nth-of-type(2) i{
+    font-size: 35px;
+}
+main .sec-i{
+    margin: 35px 0;
+}
+main .sec-i img{
+    width: 100%;
+}
+main .sec-i .s-i h1{
+    font-size: 40px;
+    width: 300px;
+    margin: 20px 0;
+}
+main .sec-i .s-i p{
+    font-size: 20px;
+}
+main .sec-i .s-i .btn-group{
+    margin: 30px 0;
+}
+main .sec-ii{
+    background-color: rgb(4, 4, 58);
+    color: #fff;
+    padding: 15px;
+}
+main .sec-ii .i h1{
+    margin-top: 0;
+    font-size: 30px;
+    color: rgb(224, 165, 114);
+}
+main .sec-ii > .i > *,
+main .sec-ii > .ii > *{
+    margin: 20px 0;
+}
+main .sec-i .s-i .btn-group button{
+    padding: 20px;
+    border:none;
+    width: 200px;
+    background-color: tomato;
+    color: #fff;
+    letter-spacing: 5px;
+    font-weight: 900;
+}
+main .sec-ii .ii .ii-i p,
+main .sec-ii .i .i-i p{
+    margin: 8px 0;
+    color: rgb(139, 139, 139);
+}
+main .sec-iii .b .box{
+    display: flex;
+    align-items: center;
+}
+main .sec-iii{
+    margin: 40px 0;
+    margin-bottom: 100px !important;
+    margin-top: 60px !important;
+}
+main .sec-iii .b .box img{
+    width: 85px;
+    height: 100px;
+    margin-right: 20px;
+}
+main > .sec-iii > .b > .box > .cont > *{
+    margin: 5px 0;
+}
+main > .sec-iii > .b > .box > .cont > h1{
+    color: #c6c6c6;
+    font-size: 40px;
+}
+main > .sec-iii > .b > .box > .cont > p{
+    color: #787878;
+}
+.s{
+    visibility: visible;
+}
+.nav{
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.nav .t{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 40px;
+}
+.nav nav{
+    width: 300px;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+}
+.nav nav a{
+    padding: 20px 20px;
+    color: #000;
+    font-size: 30px;
+    text-decoration: none;
+}
+.nav nav a:hover{
+    background-color: #000;
+    transition: all linear .3s;
+    padding-left: 25px;
+    color: #fff;
+}
+@media screen and (min-width: 1023px){
+    main .sec-i img{
+        height: 350px;
+        background-size: cover !important;
+    }
+    main .sec-iii .b{
+        display: flex;
+        justify-content: space-between;
+    }
+    main .sec-iii .b .box .cont p{
+        width: 200px;
+    }
+    body{
+        margin-top: 40px !important;
+        position: relative;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .nav{
+        position: absolute;
+        visibility: visible;
+        background-color: transparent;
+    }
+    .t{
+        display: none;
+    }
+    .nav nav{
+        width: auto;
+        flex-direction: row !important;
+        font-size: 20px;
+        background-color: white;
+        height: 0;
+        padding: 0;
+        color: #fff;
+        position: absolute;
+        top: 0px;
+        right: 60px;
+    }
+    .nav nav a{
+        display: block !important;
+        font-size: 25px;color:#787878;
+    }
+    .nav nav a:hover{
+        color:#000;
+        background-color: unset !important;
+        transition: all linear .3s;
+        padding-left: 25px;
+    }
+    header .h-flex .ii{
+        display: none;
+    }
+
+    main .sec-ii{
+        margin-top: 35px;
+        height: 78vh;
+    }
+    main .sec-flex{
+        display: flex;
+        /* align-items: center; */
+    }
+    main .lg-flex{
+        display:flex;
+        margin-top: 40px;
+    }
+    main .sec-i .s-i .h-i{
+        width: 260px;
+        position: relative;
+        top: -30px;
+    }
+    main .sec-i .s-i .h-i h1{
+        width: 220px;
+    }
+    main .sec-i .s-i{
+        margin-top: 20px;
+    }
+    main .sec-i .s-i .p-i{
+        margin-left: 40px;
+    }
+    main .sec-i{
+        margin-right: 20px;
+    }
+    main section{
+        display: block;
+    }
+}
